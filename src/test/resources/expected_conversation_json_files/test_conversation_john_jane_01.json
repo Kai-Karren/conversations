@@ -1,0 +1,34 @@
+{
+  "id": "beb1b70a-cebf-4b7b-96d7-5757a551030d",
+  "timestamp": "2023-06-23T15:31:33.467416700Z",
+  "participants": [
+    "John",
+    "Jane"
+  ],
+  "messages": [
+    {
+      "id": "85db4556-de22-4ccb-8344-8e96ba6be51f",
+      "participant": "John",
+      "text": "How are you?",
+      "timestamp": "2023-06-23T15:31:33.467416700Z",
+      "intents": [],
+      "intent_ranking": [],
+      "entities": [],
+      "slots": [],
+      "labels": []
+    },
+    {
+      "id": "fd4e6472-d1df-4e3d-8ecd-9e504af0821e",
+      "participant": "Jane",
+      "text": "I am fine. What\u0027s about you?",
+      "timestamp": "2023-06-23T15:31:33.467416700Z",
+      "intents": [],
+      "intent_ranking": [],
+      "entities": [],
+      "slots": [],
+      "labels": []
+    }
+  ],
+  "slots": [],
+  "labels": []
+}
