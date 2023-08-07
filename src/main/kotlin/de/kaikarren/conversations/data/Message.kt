@@ -5,7 +5,7 @@ import java.time.Instant
 import java.util.*
 
 /**
- * Data class that represents a Conversation Message.
+ * Data class that represents a message in a conversation.
  *
  * Usually a message contains text of a certain participant and optionally different information
  * like classified intents and so on.
@@ -16,26 +16,29 @@ import java.util.*
  *
  * It also contains a MutableList of labels.
  *
- *          {
- *              "participant": "user",
- *              "text": "Hello, I am calling to make a reservation.",
- *              "intents": [
- *                  "intent": {
- *                      "name": "reservation",
- *                      "confidence": 1.0
- *                  }
- *              ],
- *              "intent_ranking": [
- *                  {
- *                      "name": "reservation",
- *                      "confidence": 1.0
- *                  }
- *              ],
- *              "slots": [],
- *              "labels": [
- *                  "greeting", "reservation_request"
- *              ],
- *          }
+ * {
+ *   "id": "1e84c925-09f5-41aa-a419-199ce06e0567",
+ *   "participant": "John Doe",
+ *   "text": "I would like to make a reservation.",
+ *   "timestamp": "2023-08-07T12:51:44.582190600Z",
+ *   "intents": [
+ *     {
+ *       "name": "reservation_request",
+ *       "confidence": 0.81,
+ *       "classifier": "unit_test"
+ *     }
+ *   ],
+ *   "intent_ranking": [
+ *     {
+ *       "name": "reservation_request",
+ *       "confidence": 0.81,
+ *       "classifier": "unit_test"
+ *     }
+ *   ],
+ *   "entities": [],
+ *   "slots": [],
+ *   "labels": []
+ * }
  *
  * Please note to prevent GSON from loading null for the labels when they are not given,
  * all fields need default values. See https://proandroiddev.com/safe-parsing-kotlin-data-classes-with-gson-4d560fe3cdd2

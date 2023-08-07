@@ -4,4 +4,5 @@ data class Entity(
     val entity: String = "",
     val value: String = "",
     val confidence: Double = 1.0,
+    val extractor: String = "",
 )

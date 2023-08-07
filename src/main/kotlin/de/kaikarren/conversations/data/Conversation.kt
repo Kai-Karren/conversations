@@ -21,6 +21,7 @@ data class Conversation(
     }
 
     fun addMessage(message: Message) {
+
         messages.add(message)
 
         if(!participants.contains(message.participant)){

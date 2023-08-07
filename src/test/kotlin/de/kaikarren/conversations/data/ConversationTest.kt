@@ -23,7 +23,7 @@ class ConversationTest {
 
         val conversationAsJSON = gson.toJson(conversation)
 
-        val inputStream = this.javaClass.classLoader.getResourceAsStream("expected_conversation_json_files/test_conversation_john_jane_01.json")
+        val inputStream = this.javaClass.classLoader.getResourceAsStream("json/expected_conversation_json_files/test_conversation_john_jane_01.json")
 
         assertEquals(String(inputStream!!.readAllBytes()), conversationAsJSON)
 
